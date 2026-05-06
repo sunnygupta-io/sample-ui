@@ -1,7 +1,11 @@
 .conversation-history-container {
   display: flex;
-  height: 100vh;
+  min-height: 100%;
   width: 100%;
   background-color: #fcfcfd;
-  overflow: hidden;
+}
+
+.no-sidebar .conversation-details {
+  max-width: 1200px;
+  margin: 0 auto;
 }

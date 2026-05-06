@@ -1,0 +1,33 @@
+{
+  "id": "FB-RULE-2026",
+  "satisfactionStatus": "Feedback Rules Active",
+  "subtitle": "Guidelines and rules for collecting customer feedback across territories.",
+  "metrics": [
+    { "label": "Active Rules", "value": "12", "isHighlight": true },
+    { "label": "Last Updated", "value": "2026-04-15", "isHighlight": false },
+    { "label": "Compliance Rate", "value": "98%", "isHighlight": false }
+  ],
+  "content": [
+    {
+      "heading": "General Guidelines",
+      "paragraphs": [
+        "All feedback must be collected immediately after the call HCP interaction to ensure accuracy.",
+        "Ensure the target persona is correctly identified before logging the feedback entry."
+      ]
+    },
+    {
+      "heading": "Validation Rules",
+      "paragraphs": [
+        "The 'Updated By' field must match a valid system username.",
+        "Feedback entries without a timestamp will be automatically rejected by the data pipeline."
+      ]
+    },
+    {
+      "heading": "Escalation Process",
+      "paragraphs": [
+        "In case of conflicting feedback, the territory lead must be notified within 24 hours.",
+        "Standard escalation protocols apply to all 'RYB-LAZ' brand interactions."
+      ]
+    }
+  ]
+}

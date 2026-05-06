@@ -24,6 +24,7 @@ const data = {
 } as unknown as DashboardBodyData
 
 const SELECTED_SUMMARY_ID_KEY = 'dashboard_selectedSummaryId'
+const SELECTED_FEEDBACK_ID_KEY = 'dashboard_selectedFeedbackId'
 
 function DashboardBody() {
   const [viewMode, setViewMode] = useState<ViewMode>(() => {
@@ -43,23 +44,37 @@ function DashboardBody() {
 
   const [selected, setSelected] = useState<SummaryRow | null>(() => {
     const savedId = localStorage.getItem(SELECTED_SUMMARY_ID_KEY)
-    if (!savedId) {
-      return null
-    }
-
+    if (!savedId) return null
     return data.generatedSummaries.rows.find((row) => row.id === savedId) ?? null
+  })
+
+  const [selectedFeedback, setSelectedFeedback] = useState<FeedbackRow | null>(() => {
+    const savedId = localStorage.getItem(SELECTED_FEEDBACK_ID_KEY)
+    if (!savedId) return null
+    return data.feedbackCollected.rows.find((row) => row.id === savedId) ?? null
   })
 
   useEffect(() => {
     if (selected) {
       localStorage.setItem(SELECTED_SUMMARY_ID_KEY, selected.id)
-      // Keep details mode stable even after reload.
+      localStorage.removeItem(SELECTED_FEEDBACK_ID_KEY)
+      setSelectedFeedback(null)
       setViewMode('generatedSummaries')
-      return
+    } else {
+      localStorage.removeItem(SELECTED_SUMMARY_ID_KEY)
     }
-
-    localStorage.removeItem(SELECTED_SUMMARY_ID_KEY)
   }, [selected])
+
+  useEffect(() => {
+    if (selectedFeedback) {
+      localStorage.setItem(SELECTED_FEEDBACK_ID_KEY, selectedFeedback.id)
+      localStorage.removeItem(SELECTED_SUMMARY_ID_KEY)
+      setSelected(null)
+      setViewMode('feedbackCollected')
+    } else {
+      localStorage.removeItem(SELECTED_FEEDBACK_ID_KEY)
+    }
+  }, [selectedFeedback])
 
   const filteredSummaryRows = useMemo(() => 
     data.generatedSummaries.rows.filter(r => matches(r, filterState, data)), 
@@ -88,13 +103,23 @@ function DashboardBody() {
       key: 'action', 
       label: '', 
       className: 'action-col',
-      render: () => <button className="view-rules-btn">view feedback rules</button>
+      render: (row) => (
+        <button 
+          className="view-rules-btn" 
+          onClick={(e) => {
+            e.stopPropagation();
+            setSelectedFeedback(row);
+          }}
+        >
+          view feedback rules
+        </button>
+      )
     },
   ]
 
   return (
     <main className="dashboard-body">
-      {!selected && (
+      {!selected && !selectedFeedback && (
         <DashboardListHeader
           title={viewMode === 'generatedSummaries' ? data.title : data.tabs.feedbackCollected}
           tabs={data.tabs}
@@ -109,12 +134,16 @@ function DashboardBody() {
       <section className="content-grid">
         {viewMode === 'generatedSummaries' ? (
           selected ? (
-            <ConversationHistory onBack={() => setSelected(null)} />
+            <ConversationHistory onBack={() => setSelected(null)} mode="summary" />
           ) : (
             <GenericTable columns={summaryCols} data={filteredSummaryRows} itemsPerPage={12} onRowClick={(r) => setSelected(r as SummaryRow)} />
           )
         ) : (
-          <GenericTable columns={feedbackCols} data={filteredFeedbackRows} itemsPerPage={10} />
+          selectedFeedback ? (
+            <ConversationHistory onBack={() => setSelectedFeedback(null)} mode="feedback" />
+          ) : (
+            <GenericTable columns={feedbackCols} data={filteredFeedbackRows} itemsPerPage={10} />
+          )
         )}
       </section>
     </main>
