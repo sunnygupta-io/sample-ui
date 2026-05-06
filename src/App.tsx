@@ -1,10 +1,7 @@
-import React from 'react'
-import FeedbackTable from './components/FeedbackTable'
+import ConversationBody from './components/ConversationBody'
 
-const App = () => {
-  return (
-    <div><FeedbackTable/></div>
-  )
+function App() {
+  return <ConversationBody />
 }
 
 export default App

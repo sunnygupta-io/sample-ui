@@ -1,0 +1,144 @@
+{
+  "title": "Generalized Summaries",
+  "tabs": {
+    "generatedSummaries": "Generalized Summaries",
+    "feedbackCollected": "Feedback Collected"
+  },
+  "filters": {
+    "brands": ["All brands", "Neurovia", "Cardion", "Dermexa"],
+    "personas": ["All personas", "Specialist", "Generalist", "Educator"],
+    "territories": ["All territories", "North-101", "West-204", "South-311"]
+  },
+  "generatedSummaries": {
+    "columns": [
+      { "key": "reference", "label": "Reference" },
+      { "key": "callId", "label": "Call ID" },
+      { "key": "targetPersona", "label": "Target Persona" },
+      { "key": "territory", "label": "Territory" },
+      { "key": "brand", "label": "Brand" },
+      { "key": "timestamp", "label": "Timestamp" }
+    ],
+    "rows": [
+      {
+        "id": "gs-6110421",
+        "reference": "6110421",
+        "callId": "[6110421]",
+        "targetPersona": "Specialist",
+        "territory": "North-101",
+        "brand": "Neurovia",
+        "timestamp": "2026-05-03 10:14:09"
+      },
+      {
+        "id": "gs-6110678",
+        "reference": "6110678",
+        "callId": "[6110678]",
+        "targetPersona": "Generalist",
+        "territory": "West-204",
+        "brand": "Cardion",
+        "timestamp": "2026-05-03 11:55:48"
+      },
+      {
+        "id": "gs-6110829",
+        "reference": "6110829",
+        "callId": "[6110829]",
+        "targetPersona": "Educator",
+        "territory": "South-311",
+        "brand": "Dermexa",
+        "timestamp": "2026-05-03 13:08:30"
+      },
+      {
+        "id": "gs-6111091",
+        "reference": "6111091",
+        "callId": "[6111091]",
+        "targetPersona": "Specialist",
+        "territory": "West-204",
+        "brand": "Neurovia",
+        "timestamp": "2026-05-04 08:32:17"
+      },
+      {
+        "id": "gs-6111345",
+        "reference": "6111345",
+        "callId": "[6111345]",
+        "targetPersona": "Generalist",
+        "territory": "North-101",
+        "brand": "Cardion",
+        "timestamp": "2026-05-04 09:12:54"
+      },
+      {
+        "id": "gs-6111482",
+        "reference": "6111482",
+        "callId": "[6111482]",
+        "targetPersona": "Specialist",
+        "territory": "South-311",
+        "brand": "Dermexa",
+        "timestamp": "2026-05-04 10:26:41"
+      },
+      {
+        "id": "gs-6111627",
+        "reference": "6111627",
+        "callId": "[6111627]",
+        "targetPersona": "Generalist",
+        "territory": "North-101",
+        "brand": "Neurovia",
+        "timestamp": "2026-05-04 11:08:22"
+      },
+      {
+        "id": "gs-6111744",
+        "reference": "6111744",
+        "callId": "[6111744]",
+        "targetPersona": "Educator",
+        "territory": "West-204",
+        "brand": "Cardion",
+        "timestamp": "2026-05-04 12:17:03"
+      },
+      {
+        "id": "gs-6111861",
+        "reference": "6111861",
+        "callId": "[6111861]",
+        "targetPersona": "Specialist",
+        "territory": "South-311",
+        "brand": "Dermexa",
+        "timestamp": "2026-05-04 13:03:11"
+      },
+      {
+        "id": "gs-6111988",
+        "reference": "6111988",
+        "callId": "[6111988]",
+        "targetPersona": "Generalist",
+        "territory": "North-101",
+        "brand": "Neurovia",
+        "timestamp": "2026-05-04 14:22:39"
+      },
+      {
+        "id": "gs-6112055",
+        "reference": "6112055",
+        "callId": "[6112055]",
+        "targetPersona": "Educator",
+        "territory": "West-204",
+        "brand": "Cardion",
+        "timestamp": "2026-05-04 15:14:56"
+      },
+      {
+        "id": "gs-6112149",
+        "reference": "6112149",
+        "callId": "[6112149]",
+        "targetPersona": "Specialist",
+        "territory": "North-101",
+        "brand": "Neurovia",
+        "timestamp": "2026-05-04 16:03:18"
+      }
+    ]
+  },
+  "feedbackCollected": {
+    "columns": [
+      { "key": "feedbackId", "label": "Feedback ID" },
+      { "key": "callId", "label": "Call ID" },
+      { "key": "targetPersona", "label": "Target Persona" },
+      { "key": "territory", "label": "Territory" },
+      { "key": "brand", "label": "Brand" },
+      { "key": "rating", "label": "Rating" },
+      { "key": "timestamp", "label": "Timestamp" }
+    ],
+    "rows": []
+  }
+}

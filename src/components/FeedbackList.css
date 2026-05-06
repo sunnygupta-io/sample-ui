@@ -1,0 +1,7 @@
+.feedback-list {
+  --list-accent: #4b5563;
+}
+
+.feedback-list__title {
+  border-top: 3px solid var(--list-accent);
+}
