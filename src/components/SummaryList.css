@@ -1,0 +1,7 @@
+.summary-list {
+  --list-accent: #243b53;
+}
+
+.summary-list__title {
+  border-top: 3px solid var(--list-accent);
+}
