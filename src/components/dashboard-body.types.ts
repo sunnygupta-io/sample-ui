@@ -24,8 +24,7 @@ export type SummaryRow = BaseRow & {
 
 export type FeedbackRow = BaseRow & {
   feedbackId: string
-  callId: string
-  rating: string
+  updatedBy: string
 }
 
 export type SummaryTable = {
@@ -43,7 +42,7 @@ export type Tabs = {
   feedbackCollected: string
 }
 
-export type ConversationBodyData = {
+export type DashboardBodyData = {
   title: string
   tabs: Tabs
   filters: FilterSet

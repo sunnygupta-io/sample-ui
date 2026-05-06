@@ -1,0 +1,144 @@
+/* ConversationDetails.css */
+
+.conversation-details {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 32px 40px;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- Breadcrumb Navigation --- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.back-action {
+  color: #667085;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.back-action:hover {
+  color: #344054;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: #d0d5dd;
+}
+
+.breadcrumb-current {
+  color: #344054;
+}
+
+/* --- Top Card Container --- */
+.top-card {
+  background-color: #ffffff;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  padding: 24px 32px;
+  margin-bottom: 32px;
+}
+
+.details-header {
+  margin-bottom: 24px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.title-row h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #101828;
+  margin: 0;
+}
+
+.status-pill {
+  background-color: #ecfdf3;
+  color: #027a48;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subtitle {
+  color: #667085;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* --- Metrics Grid --- */
+.metrics-grid {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid #eaecf0;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the text like in the image */
+  gap: 4px;
+  flex: 1; /* Ensures equal spacing across the row */
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #101828;
+}
+
+.metric-label {
+  font-size: 11px;
+  color: #667085;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Highlighted Metric (e.g., Red "No") */
+.metric-item.highlight .metric-value {
+  color: #d92d20; 
+}
+
+/* --- Bottom Content Section --- */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 0 8px; /* Subtle indent to align perfectly with the card above */
+}
+
+.content-block h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #101828;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.content-block p {
+  color: #344054;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.content-block p:last-child {
+  margin-bottom: 0;
+}

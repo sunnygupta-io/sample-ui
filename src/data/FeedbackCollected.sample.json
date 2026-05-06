@@ -1,0 +1,101 @@
+{
+  "columns": [
+    { "key": "feedbackId", "label": "ID" },
+    { "key": "timestamp", "label": "Timestamp" },
+    { "key": "brand", "label": "Brand" },
+    { "key": "targetPersona", "label": "Target persona" },
+    { "key": "updatedBy", "label": "Updated By" }
+  ],
+  "rows": [
+    {
+      "id": "fb-001",
+      "feedbackId": "CONV-2026-010",
+      "timestamp": "2026-03-06 09:15:23",
+      "brand": "INLEXZO",
+      "targetPersona": "MSL",
+      "updatedBy": "username",
+      "territory": "North-101"
+    },
+    {
+      "id": "fb-002",
+      "feedbackId": "CONV-2026-002",
+      "timestamp": "2026-03-06 14:28:45",
+      "brand": "RYB-LAZ",
+      "targetPersona": "OCE",
+      "updatedBy": "username",
+      "territory": "West-204"
+    },
+    {
+      "id": "fb-003",
+      "feedbackId": "CONV-2026-003",
+      "timestamp": "2026-03-06 11:35:12",
+      "brand": "RYB-LAZ",
+      "targetPersona": "OS",
+      "updatedBy": "username",
+      "territory": "South-311"
+    },
+    {
+      "id": "fb-004",
+      "feedbackId": "CONV-2026-004",
+      "timestamp": "2026-03-06 12:48:56",
+      "brand": "INLEXZO",
+      "targetPersona": "MSL",
+      "updatedBy": "username",
+      "territory": "North-101"
+    },
+    {
+      "id": "fb-005",
+      "feedbackId": "CONV-2026-006",
+      "timestamp": "2026-03-06 14:05:19",
+      "brand": "INLEXZO",
+      "targetPersona": "OS",
+      "updatedBy": "username",
+      "territory": "West-204"
+    },
+    {
+      "id": "fb-006",
+      "feedbackId": "CONV-2026-006",
+      "timestamp": "2026-03-06 14:05:19",
+      "brand": "INLEXZO",
+      "targetPersona": "OS",
+      "updatedBy": "username",
+      "territory": "West-204"
+    },
+    {
+      "id": "fb-007",
+      "feedbackId": "CONV-2026-006",
+      "timestamp": "2026-03-06 14:05:19",
+      "brand": "INLEXZO",
+      "targetPersona": "OS",
+      "updatedBy": "username",
+      "territory": "West-204"
+    },
+    {
+      "id": "fb-008",
+      "feedbackId": "CONV-2026-006",
+      "timestamp": "2026-03-06 14:05:19",
+      "brand": "INLEXZO",
+      "targetPersona": "OS",
+      "updatedBy": "username",
+      "territory": "West-204"
+    },
+    {
+      "id": "fb-009",
+      "feedbackId": "CONV-2026-006",
+      "timestamp": "2026-03-06 14:05:19",
+      "brand": "INLEXZO",
+      "targetPersona": "OS",
+      "updatedBy": "username",
+      "territory": "West-204"
+    },
+    {
+      "id": "fb-010",
+      "feedbackId": "CONV-2026-006",
+      "timestamp": "2026-03-06 14:05:19",
+      "brand": "INLEXZO",
+      "targetPersona": "OS",
+      "updatedBy": "username",
+      "territory": "West-204"
+    }
+  ]
+}

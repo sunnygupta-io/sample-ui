@@ -1,0 +1,22 @@
+{
+  "id": "CONV-2026-001",
+  "satisfactionStatus": "User Satisfied",
+  "subtitle": "Pre call summary for <HCP Name> for Inlexzo",
+  "metrics": [
+    { "label": "CALL HCP JNJ ID", "value": "6103626" },
+    { "label": "Target Persona", "value": "MSL" },
+    { "label": "Target WWIDs", "value": "152259850" },
+    { "label": "Brand", "value": "Inlexzo" },
+    { "label": "Resolved", "value": "No", "isHighlight": true }
+  ],
+  "content": [
+    {
+      "heading": "BLADDER",
+      "paragraphs": [
+        "In the next 3 months no insertion procedure(s) have been scheduled.",
+        "PSM attendance has not been confirmed. The HCP has not completed an INLEXZO insertion procedure before Clinical barriers have not been identified",
+        "1 KOL is at this account. 0 bladder cancer publications have been co-authored by HCPs practicing at this account in the past year."
+      ]
+    }
+  ]
+}

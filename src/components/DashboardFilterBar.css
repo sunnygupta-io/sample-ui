@@ -1,0 +1,33 @@
+.filters-row {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.filters-row > * {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .filters-row {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .filters-row > * {
+    flex: 1 1 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filters-row > * {
+    flex-basis: 100%;
+  }
+}

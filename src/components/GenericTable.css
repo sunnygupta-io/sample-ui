@@ -1,0 +1,171 @@
+.table-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 600px;
+}
+
+.data-table th {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 16px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: 16px 20px;
+  font-size: 13px;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr.clickable {
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+}
+
+.data-table tr.clickable:hover {
+  background-color: #fbfbfb;
+}
+
+.brand-col {
+  font-weight: 700;
+}
+
+.action-col {
+  text-align: right;
+}
+
+.no-results {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.pagination button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  color: #888;
+  transition: all 0.2s;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.view-rules-btn {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .table-card {
+    border-radius: 10px;
+  }
+
+  .data-table {
+    min-width: 0;
+  }
+
+  .data-table thead {
+    display: none;
+  }
+
+  .data-table,
+  .data-table tbody,
+  .data-table tr,
+  .data-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .data-table tr {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .data-table tr:last-child {
+    border-bottom: none;
+  }
+
+  .data-table td {
+    padding: 8px 0;
+    border-bottom: none;
+    white-space: normal;
+  }
+
+  .data-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .action-col {
+    text-align: left;
+    padding-top: 12px;
+  }
+
+  .pagination {
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .page-info {
+    font-size: 12px;
+  }
+}
