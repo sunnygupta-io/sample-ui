@@ -1,0 +1,121 @@
+/* FeedbackTable.css */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px; /* Bumped back up slightly for readability */
+  color: #4a4a4a;
+}
+
+/* Red Header */
+.feedback-table thead {
+  background-color: #e3382b; 
+  color: #ffffff;
+}
+
+.feedback-table th {
+  padding: 10px 12px; /* Added more vertical space */
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* Row Borders and Spacing */
+.feedback-table td {
+  padding: 10px 12px; /* Added breathing room back to the rows */
+  border-bottom: 1px solid #eaeaea; /* Crisper border color to match the image */
+  vertical-align: middle;
+}
+
+.feedback-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* Layout Adjustments */
+.feedback-table th:first-child,
+.feedback-table td.id-col {
+  text-align: left;
+  padding-left: 24px; /* Slightly wider left margin */
+}
+
+.feedback-table th:nth-child(2), .feedback-table td:nth-child(2),
+.feedback-table th:nth-child(3), .feedback-table td:nth-child(3),
+.feedback-table th:nth-child(4), .feedback-table td:nth-child(4),
+.feedback-table th:nth-child(5), .feedback-table td:nth-child(5) {
+  text-align: center;
+}
+
+.feedback-table th:last-child,
+.feedback-table .action-col {
+  text-align: right;
+  padding-right: 24px; /* Slightly wider right margin */
+}
+
+/* Action Button */
+.view-btn {
+  background-color: #e3382b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px; /* Slightly larger button */
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #cc3226;
+}
+
+.view-btn:active {
+  transform: scale(0.98);
+}
+
+/* --- Pagination Controls --- */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0; /* Restored padding for the pagination area */
+  gap: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.page-btn {
+  background-color: #f5f5f5; /* Light grey matching the image */
+  border: none;
+  border-radius: 4px;
+  width: 32px; /* Restored button size for easier clicking */
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.page-btn:hover:not(.disabled) {
+  background-color: #e3382b;
+  color: #ffffff;
+}
+
+.page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 13px;
+  color: #666666;
+  font-weight: 500;
+}
