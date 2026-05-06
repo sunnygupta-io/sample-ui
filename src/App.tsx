@@ -1,7 +1,7 @@
-import ConversationBody from './components/ConversationBody'
+import DashboardBody from './components/DashboardBody'
 
 function App() {
-  return <ConversationBody />
+  return <DashboardBody />
 }
 
 export default App
